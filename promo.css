@@ -1,0 +1,164 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.img {
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.main_box {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    font-family: "Jacques Francois";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 150;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 112px; /* Adjust this to match the height of your navbar */
+}
+
+.navbar ul {
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 20px; /* Move the navbar 20px down from the top */
+    left: 50%; /* Center the navbar horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    width: 750px; /* Set the desired width */
+    height: 80px; /* Set the desired height */
+    background-color: #EEE6E6; /* Set the background color */
+    border-radius: 50px; /* Add rounded corners */
+    display: flex;
+    justify-content: center; /* Center the list items horizontally */
+    align-items: center; /* Center the list items vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.navbar ul li {
+    margin: 0 10px; /* Adjust spacing between list items */
+}
+
+.navbar ul li a {
+    display: flex; 
+    align-items: center; /* Vertically center icon and text */
+    text-decoration: none;
+    color: #000000; /* Set the text color */
+    text-align: center;
+    padding: 10px 15px; /* Adjust padding for better spacing */
+    font-size: 23px; /* Adjust font size as needed */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navbar ul li a:hover {
+    color: rgb(174, 174, 239); /* Change text color on hover */
+}
+
+.icon {
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle; 
+    margin-right: 5px; 
+}
+.about_us {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 20px; /* Padding inside the section */
+    margin-top: 150px; /* Increased margin to add more space */
+    background-color: #ffffff; /* White background */
+    border-radius: 50px; /* Rounded corners for the section */
+    max-width: 1200px; /* Limit the maximum width of the section */
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto; /* Center the section horizontally */
+}
+
+/* Text section styling */
+.about_us .text {
+    flex: 1; /* Allow text to take up remaining space */
+    max-width: 50%; /* Limit text width to 50% of the container */
+    font-size: 18px; /* Adjust font size for better readability */
+    line-height: 1.6; /* Improve line spacing */
+}
+
+/* Image section styling */
+.about_us .imgage {
+    flex: 1; /* Allow image to take up remaining space */
+    max-width: 45%; /* Reduced image width to 35% of the container */
+    text-align: right; /* Align image to the right */
+}
+
+.about_us .imgage img {
+    border-radius: 30px; /* Rounded corners for the image */
+    max-width: 95%; /* Reduce image size to 90% of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+}
+.contact_us {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 20px; /* Padding inside the section */
+    margin-top: 150px; /* Increased margin to add more space */
+    background-color: #ffffff; /* White background */
+    border-radius: 50px; /* Rounded corners for the section */
+    max-width: 1200px; /* Limit the maximum width of the section */
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto; /* Center the section horizontally */
+}
+
+/* Text section styling */
+.contact_us .text {
+    flex: 1; /* Allow text to take up remaining space */
+    max-width: 50%; /* Limit text width to 50% of the container */
+    font-size: 18px; /* Adjust font size for better readability */
+    line-height: 1.6; /* Improve line spacing */
+    text-align: left; /* Align text to the left */
+}
+
+/* Image section styling */
+.contact_us .imgage {
+    flex: 1; /* Allow image to take up remaining space */
+    max-width: 45%; /* Limit image width to 45% of the container */
+    text-align: right; /* Align image to the right */
+}
+
+/* Image styling */
+.contact_us .imgage img {
+    border-radius: 30px; /* Rounded corners for the image */
+    max-width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+}
