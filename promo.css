@@ -97,7 +97,7 @@ html {
     align-items: center;
     gap: 50px;
     padding: 40px 20px; /* Padding inside the section */
-    margin-top: 150px; /* Increased margin to add more space */
+    margin-top: 100px; /* Increased margin to add more space */
     background-color: #ffffff; /* White background */
     border-radius: 50px; /* Rounded corners for the section */
     max-width: 1200px; /* Limit the maximum width of the section */
@@ -116,13 +116,13 @@ html {
 /* Image section styling */
 .about_us .imgage {
     flex: 1; /* Allow image to take up remaining space */
-    max-width: 45%; /* Reduced image width to 35% of the container */
+    max-width: 35%; /* Reduced image width to 35% of the container */
     text-align: right; /* Align image to the right */
 }
 
 .about_us .imgage img {
     border-radius: 30px; /* Rounded corners for the image */
-    max-width: 95%; /* Reduce image size to 90% of its container */
+    max-width: 90%; /* Reduce image size to 90% of its container */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove extra space below the image */
 }
@@ -131,7 +131,7 @@ html {
     align-items: center;
     gap: 50px;
     padding: 40px 20px; /* Padding inside the section */
-    margin-top: 150px; /* Increased margin to add more space */
+    margin-top: 50px; /* Increased margin to add more space */
     background-color: #ffffff; /* White background */
     border-radius: 50px; /* Rounded corners for the section */
     max-width: 1200px; /* Limit the maximum width of the section */
@@ -144,21 +144,150 @@ html {
     flex: 1; /* Allow text to take up remaining space */
     max-width: 50%; /* Limit text width to 50% of the container */
     font-size: 18px; /* Adjust font size for better readability */
-    line-height: 1.6; /* Improve line spacing */
+    line-height: 1; /* Improve line spacing */
     text-align: left; /* Align text to the left */
 }
 
 /* Image section styling */
 .contact_us .imgage {
     flex: 1; /* Allow image to take up remaining space */
-    max-width: 45%; /* Limit image width to 45% of the container */
+    max-width: 35%; /* Limit image width to 45% of the container */
     text-align: right; /* Align image to the right */
 }
 
 /* Image styling */
 .contact_us .imgage img {
     border-radius: 30px; /* Rounded corners for the image */
-    max-width: 100%; /* Ensure the image takes up the full width of its container */
+    max-width: 90%; /* Ensure the image takes up the full width of its container */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove extra space below the image */
+}
+
+
+/* Contact form layout */
+.contactform {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fdf8ef; /* Soft light background */
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+.contactform label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Input and textarea styling */
+.contactform input,
+.contactform textarea {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    transition: border-color 0.3s ease;
+    background-color: #fff;
+    width: 100%;
+}
+
+.contactform input:focus,
+.contactform textarea:focus {
+    border-color: #f0cc83;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(240, 204, 131, 0.3);
+}
+
+/* Error class */
+.contactform .error {
+    border-color: red !important;
+    background-color: #ffe6e6;
+}
+
+/* Submit button styling */
+#rsvp-button {
+    color: #000000;
+    background-color: #f0cc83;
+    border: none;
+    border-radius: 12px;
+    width: 120px;
+    height: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+#rsvp-button:hover {
+    background-color: #e2b861;
+}
+
+#contactform h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contactform {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.contactform-para{
+    width: 55%;
+    padding-right: 10px;
+    text-align: center;
+
+}
+
+#rsvp-button {
+    color: #000000;
+    background-color: #f0cc83;
+    border-radius: 15%;
+    width: 90px;
+    height: 40px;
+} 
+.extra {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px 20px;
+    margin-top: 40px;
+    background-image: url('assets/wave.png'); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-size: 120% auto;
+    background-position: center;
+    border-radius: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.googlemaps {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+}
+
+.googlemaps iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+    flex: 1;
+    max-width: 45%;
+    font-size: 18px;
+    line-height: 1.6;
 }
