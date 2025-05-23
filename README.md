@@ -8,13 +8,7 @@ Welcome to **Bubble Bliss**, a beautifully designed landing page for a fictional
 
 - [About](#about)  
 - [Features](#features)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Technologies](#technologies)  
-- [Deployment](#deployment)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Contact](#contact)  
+
 
 ---
 
