@@ -8,13 +8,13 @@
     <body> 
         <div class="navbar">
             <ul>
-            <li><a href="#about"><img src="assets/home.svg" alt="Home" class="icon">Home </a></li>
-            <li><a href="#tag-line"><img src="assets/droplet.svg" alt="About us" class="icon">About us</a></li>
-            <li><a href="#Event-schedule"><img src="assets/smartphone.svg" alt="Contact us" class="icon">Contact us</a></li>
-            <li><a href="#links"><img src="assets/map.svg" alt="Find us" class="icon">Find us</a></li>
+            <li><a href="#img"><img src="assets/home.svg" alt="Home" class="icon">Home </a></li>
+            <li><a href="#about_us"><img src="assets/droplet.svg" alt="About us" class="icon">About us</a></li>
+            <li><a href="#contact_us"><img src="assets/smartphone.svg" alt="Contact us" class="icon">Contact us</a></li>
+            <li><a href="#extra"><img src="assets/map.svg" alt="Find us" class="icon">Find us</a></li>
             </ul>
         </div>
-        <div class="img">
+        <div class="img" id="img">
         <img src="assets/promo.jpg" alt="main page">
         <div class="main_box">
             <h2>Sip, Smile, Repeat! 🍹✨</h2>
@@ -23,7 +23,7 @@
         </div>
         </div>
 
-        <div class="about_us">
+        <div class="about_us" id="about_us">
             <div class="text">
                 <h2>Welcome to Boba Haven! </h2>
                 <p>At Boba Haven, we believe bubble tea is more than just a drink—it’s an experience! Founded with a passion for flavor and fun, our mission is to bring you the perfect blend of refreshing teas, creamy delights, and chewy boba goodness.</p>
@@ -35,20 +35,51 @@
             </div>
         </div>
 
-        <div class="contact_us">
+        <div class="contact_us" id="contact_us">
             <div class="text">
                 <h2>CONTACT US: </h2>
                 <p>Reach out to us and let us know if there is anything we can do for you.</p>
                 <br>
+                <div class="contactform">
+                    <form id="contactform" title="contactform">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                
+                        <label for="message">Your message:</label>
+                        <input type="message" id="message" name="message" >
+                     <br>
+                    <button type="submit" id="rsvp-button">Submit</button>
+                </form>
+                </div>      
             </div>
             <div class="imgage">
                 <img src="assets/bubble.jpg" alt="image">
             </div>
         </div>
-
+        <div class="extra" id="extra">
+            <div class="googlemaps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.1072994961282!2d11.425198434270312!3d63.43089226941831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d0beb52d13695%3A0x86996c36fd6f645a!2sFlornes!5e0!3m2!1sen!2sma!4v1748024738367!5m2!1sen!2sma"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="info">
+                <h2>Visit us at:</h2>
+                <p>📍 248 Blossom Street, Suite 102<br>
+                    Sunnyville, CA 90210<br>
+                    United States</p>
+                <br>
+                <h3>Opening Hours:</h3>
+                <p>Monday – Friday: 11:00 AM – 8:00 PM<br>
+                    Saturday: 12:00 PM – 9:00 PM<br>
+                    Sunday: Closed</p>
+            </div>
+        </div>
         
+        <script src="promo.js"></script>
     </body>
-
 
 
 </html>
